@@ -226,12 +226,12 @@
 225	46:b,c,a	I c 2 m	
 226	46:a,-c,b	I m 2 a	
 227	47	P m m m	-P 2 2
-228	48	P n n n  [origin 2]	-P 2ab 2bc
+228	48	P n n n :2	-P 2ab 2bc
 229	48:a,b,c;1/4,1/4,1/4	P n n n :1	
 230	49	P c c m	-P 2 2c
 231	49:c,a,b	P m a a	
 232	49:b,c,a	P b m b	
-233	50	P b a n  [origin 2]	-P 2ab 2b
+233	50	P b a n :2	-P 2ab 2b
 234	50:c,a,b	P n c b :2	
 235	50:b,c,a	P c n a :2	
 236	50:a,b,c;1/4,1/4,0	P b a n :1	
@@ -276,7 +276,7 @@
 275	58	P n n m	-P 2 2n
 276	58:c,a,b	P m n n	
 277	58:b,c,a	P n m n	
-278	59	P m m n  [origin 2]	-P 2ab 2a
+278	59	P m m n :2	-P 2ab 2a
 279	59:c,a,b	P n m m :2	
 280	59:b,c,a	P m n m :2	
 281	59:a,b,c;1/4,1/4,0	P m m n :1	
@@ -320,7 +320,7 @@
 319	67:-c,b,a	A c m m (A e m m)	
 320	67:b,c,a	B m c m (B m e m)	
 321	67:a,-c,b	B m a m (B m e m)	
-322	68	C c c a (C c c e)  [origin 2]	-C 2a 2ac
+322	68	C c c a (C c c e) :2	-C 2a 2ac
 323	68:b,a,-c	C c c b (C c c e) :2	
 324	68:c,a,b	A b a a (A e a a) :2	
 325	68:-c,b,a	A c a a (A e a a) :2	
@@ -333,7 +333,7 @@
 332	68:b,c,a;0,1/4,1/4	B b c b (B b e b) :1	
 333	68:a,-c,b;0,1/4,1/4	B b a b (B b e b) :1	
 334	69	F m m m	-F 2 2
-335	70	F d d d  [origin 2]	-F 2uv 2vw
+335	70	F d d d :2	-F 2uv 2vw
 336	70:a,b,c;-1/8,-1/8,-1/8	F d d d :1	
 337	71	I m m m	-I 2 2
 338	72	I b a m	-I 2 2c
@@ -367,17 +367,17 @@
 366	83:a-b,a+b,c	C 4/m	
 367	84	P 42/m	-P 4c
 368	84:a-b,a+b,c	C 42/m	
-369	85	P 4/n  [origin 2]	-P 4a
+369	85	P 4/n :2	-P 4a
 370	85:a-b,a+b,c	C 4/e :2	
 371	85:a,b,c;-1/4,1/4,0	P 4/n :1	
 372	85:a-b,a+b,c;-1/4,1/4,0	C 4/e :1	
-373	86	P 42/n  [origin 2]	-P 4bc
+373	86	P 42/n :2	-P 4bc
 374	86:a-b,a+b,c	C 42/e :2	
 375	86:a,b,c;-1/4,-1/4,-1/4	P 42/n :1	
 376	86:a-b,a+b,c;-1/4,-1/4,-1/4	C 42/e :1	
 377	87	I 4/m	-I 4
 378	87:a-b,a+b,c	F 4/m	
-379	88	I 41/a  [origin 2]	-I 4ad
+379	88	I 41/a :2	-I 4ad
 380	88:a-b,a+b,c	F 41/d :2	
 381	88:a,b,c;0,-1/4,-1/8	I 41/a :1	
 382	88:a-b,a+b,c;0,-1/4,-1/8	F 41/d :1	
@@ -453,11 +453,11 @@
 452	123:a-b,a+b,c	C 4/m m m	
 453	124	P 4/m c c	-P 4 2c
 454	124:a-b,a+b,c	C 4/m c c	
-455	125	P 4/n b m  [origin 2]	-P 4a 2b
+455	125	P 4/n b m :2	-P 4a 2b
 456	125:a-b,a+b,c	C 4/e m g1 :2	
 457	125:a,b,c;-1/4,-1/4,0	P 4/n b m :1	
 458	125:a-b,a+b,c;-1/4,-1/4,0	C 4/e m g1 :1	
-459	126	P 4/n n c  [origin 2]	-P 4a 2bc
+459	126	P 4/n n c :2	-P 4a 2bc
 460	126:a-b,a+b,c	C 4/e c g2 :2	
 461	126:a,b,c;-1/4,-1/4,-1/4	P 4/n n c :1	
 462	126:a-b,a+b,c;-1/4,-1/4,-1/4	C 4/e c g2 :1	
@@ -465,11 +465,11 @@
 464	127:a-b,a+b,c	C 4/m m g1	
 465	128	P 4/m n c	-P 4 2n
 466	128:a+b,-a+b,c	C 4/m c g2	
-467	129	P 4/n m m  [origin 2]	-P 4a 2a
+467	129	P 4/n m m :2	-P 4a 2a
 468	129:a-b,a+b,c	C 4/e m m :2	
 469	129:a,b,c;-1/4,1/4,0	P 4/n m m :1	
 470	129:a-b,a+b,c;-1/4,1/4,0	C 4/e m m :1	
-471	130	P 4/n c c  [origin 2]	-P 4a 2ac
+471	130	P 4/n c c :2	-P 4a 2ac
 472	130:a-b,a+b,c	C 4/e c c :2	
 473	130:a,b,c;-1/4,1/4,0	P 4/n c c :1	
 474	130:a-b,a+b,c;-1/4,1/4,0	C 4/e c c :1	
@@ -477,11 +477,11 @@
 476	131:a-b,a+b,c	C 42/m c m	
 477	132	P 42/m c m	-P 4c 2c
 478	132:a-b,a+b,c	C 42/m m c	
-479	133	P 42/n b c  [origin 2]	-P 4ac 2b
+479	133	P 42/n b c :2	-P 4ac 2b
 480	133:a-b,a+b,c	C 42/e c g1 :2	
 481	133:a,b,c;-1/4,1/4,-1/4	P 42/n b c :1	
 482	133:a-b,a+b,c;-1/4,1/4,-1/4	C 42/e c g1 :1	
-483	134	P 42/n n m  [origin 2]	-P 4ac 2bc
+483	134	P 42/n n m :2	-P 4ac 2bc
 484	134:a-b,a+b,c	C 42/e m g2 :2	
 485	134:a,b,c;-1/4,1/4,-1/4	P 42/n n m :1	
 486	134:a-b,a+b,c;-1/4,1/4,-1/4	C 42/e m g2 :1	
@@ -489,11 +489,11 @@
 488	135:a-b,a+b,c	C 42/m c g1	
 489	136	P 42/m n m	-P 4n 2n
 490	136:a-b,a+b,c	C 42/m m g2	
-491	137	P 42/n m c  [origin 2]	-P 4ac 2a
+491	137	P 42/n m c :2	-P 4ac 2a
 492	137:a-b,a+b,c	C 42/e c m :2	
 493	137:a,b,c;-1/4,1/4,-1/4	P 42/n m c :1	
 494	137:a-b,a+b,c;-1/4,1/4,-1/4	C 42/e c m :1	
-495	138	P 42/n c m  [origin 2]	-P 4ac 2ac
+495	138	P 42/n c m :2	-P 4ac 2ac
 496	138:a-b,a+b,c	C 42/e m c :2	
 497	138:a,b,c;-1/4,1/4,-1/4	P 42/n c m :1	
 498	138:a-b,a+b,c;-1/4,1/4,-1/4	C 42/e m c :1	
@@ -501,11 +501,11 @@
 500	139:a-b,a+b,c	F 4/m m m	
 501	140	I 4/m c m	-I 4 2c
 502	140:a-b,a+b,c	F 4/m m c	
-503	141	I 41/a m d  [origin 2]	-I 4bd 2
+503	141	I 41/a m d :2	-I 4bd 2
 504	141:a-b,a+b,c	F 41/d d m :2	
 505	141:a,b,c;0,1/4,-1/8	I 41/a m d :1	
 506	141:a-b,a+b,c;0,1/4,-1/8	F 41/d d m :1	
-507	142	I 41/a c d  [origin 2]	-I 4bd 2c
+507	142	I 41/a c d :2	-I 4bd 2c
 508	142:a-b,a+b,c	F 41/d d c :2	
 509	142:a,b,c;0,1/4,-1/8	I 41/a c d :1	
 510	142:a-b,a+b,c;0,1/4,-1/8	F 41/d d c :1	
@@ -574,10 +574,10 @@
 573	198	P 21 3	P 2ac 2ab 3
 574	199	I 21 3	I 2b 2c 3
 575	200	P m -3	-P 2 2 3
-576	201	P n -3  [origin 2]	-P 2ab 2bc 3
+576	201	P n -3 :2	-P 2ab 2bc 3
 577	201:a,b,c;-1/4,-1/4,-1/4	P n -3 :1	
 578	202	F m -3	-F 2 2 3
-579	203	F d -3  [origin 2]	-F 2uv 2vw 3
+579	203	F d -3 :2	-F 2uv 2vw 3
 580	203:a,b,c;-1/8,-1/8,-1/8	F d -3 :1	
 581	204	I m -3	-I 2 2 3
 582	205	P a -3	-P 2ac 2ab 3
@@ -597,16 +597,16 @@
 596	219	F -4 3 c	F -4a 2 3
 597	220	I -4 3 d	I -4bd 2c 3
 598	221	P m -3 m	-P 4 2 3
-599	222	P n -3 n  [origin 2]	-P 4a 2bc 3
+599	222	P n -3 n :2	-P 4a 2bc 3
 600	222:a,b,c;-1/4,-1/4,-1/4	P n -3 n :1	
 601	223	P m -3 n	-P 4n 2 3
-602	224	P n -3 m  [origin 2]	-P 4bc 2bc 3
+602	224	P n -3 m :2	-P 4bc 2bc 3
 603	224:a,b,c;-1/4,-1/4,-1/4	P n -3 m :1	
 604	225	F m -3 m	-F 4 2 3
 605	226	F m -3 c	-F 4a 2 3
-606	227	F d -3 m  [origin 2]	-F 4vw 2vw 3
+606	227	F d -3 m :2	-F 4vw 2vw 3
 607	227:a,b,c;-1/8,-1/8,-1/8	F d -3 m :1	
-608	228	F d -3 c  [origin 2]	-F 4ud 2vw 3
+608	228	F d -3 c :2	-F 4ud 2vw 3
 609	228:a,b,c;-3/8,-3/8,-3/8	F d -3 c :1	
 610	229	I m -3 m	-I 4 2 3
 611	230	I a -3 d	-I 4bd 2c 3
